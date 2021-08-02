@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+body{
+    background-color: #0B0818;
+}
+
+header .navBarLogo {
+    width: 100%;
+    padding: 25px;
+    background-color: #0B0818;
+    position: fixed;
+    z-index: 400; 
+}
+
+
+header .navBarLogo .navbar ul li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-right: 15px;
+    text-align: right;            
+}
+
+ul li a:after {
+    content: '';    
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #EA4E1B;
+    transition: width .4s ease;
+  }
+  
+  ul li a:hover{
+    font-weight: bolder;
+  }
+
+  ul li a:hover:after {    
+    width: 100%;
+    left: 0;
+    background: #EA4E1B;
+  }
+
+
+
+
+header .subHeader {
+    height: 110vh;
+    color: white;
+    background-color: #0B0818;
+    font-family: 'Raleway', sans-serif;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.subHeader h1 {   
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.subHeader h2 {
+    font-size: 60px;
+    line-height: 62px;
+    margin-bottom: 20px;
+
+}
+
+.subHeader h3 {
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.section1 {    
+    position: relative;
+    height: 80vh;
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr); 
+    color: white;
+    background-color: #0B0818;
+    font-family: 'Raleway', sans-serif;    
+}
+
+.section1 .subSection1 {
+    position: absolute; 
+    left: 5%;
+}
+
+.subSection1 .imgsubSection1 {
+    position: absolute;
+    grid-column: 1/2;
+    left: 30%;
+    bottom: -30%;
+}
+
+.section1 .subSection2 {
+    position: absolute;
+    top: -10%;
+    grid-column: 2/3;
+    background-color: #0B0818;
+    border-radius: 4px;
+    padding: 20px;
+    width: 40rem;    
+}
+
+
+.section1 .subSection2 h2 {
+    font-size: 18px;
+    line-height: 30px;
+    color: #FADA24;
+}
+
+.section1 .subSection2 h3 {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.section1 .subSection2 p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #F2F2F2;
+}
+
+@media (max-width: 800px) {
+    .section1{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .section1 .subSection1 {
+        display: none;
+    }
+}
+
+.section2 {
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    background-color: #0B0818;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.section2 .secTitle {
+    font-size: 18px;
+    line-height: 30px;
+    color: #FADA24;
+    margin-left: 20vw;
+}
+
+.section2 .secSubtitle {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    margin-left: 20vw;
+    margin-bottom: 200px;
+}
+
+.section2 .sectionCards {    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    
+}
+
+.section2 .sectionCards .card {   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    position: relative; 
+    width: 278px;
+    height: 415px;
+    border-radius: 20px;
+    background-color: #2C2740;
+    padding: 60px 30px;
+    text-align: center;
+    justify-self: center;
+}
+
+@media (max-width: 1200px){
+    .section2 .sectionCards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+        row-gap: 100px;
+    }
+}
+
+@media (max-width: 620px){
+    .section2 .sectionCards{
+        display: grid;
+        grid-template-columns: 1fr;  
+        row-gap: 100px;
+    }
+}
+
+.card .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;    
+    top: -10%;     
+    left: Calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    background-color: #0B0818;  
+    border-radius: 20px;  
+}
+
+.cardImg1 {
+    
+    box-shadow: 5px 5px 20px rgba(253, 179, 48, 0.15);    
+}
+
+.cardImg1 i {
+    color: #F29200;
+    font-size: 20px;
+}
+
+.cardImg1:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(253, 179, 48, 0.15);
+}
+
+.cardImg2 {    
+    box-shadow: 5px 5px 20px rgba(117, 181, 241, 0.26);
+}
+
+.cardImg2 i {
+    color: #75B5F1;
+    font-size: 20px;
+}
+
+.cardImg2:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(117, 181, 241, 0.26);
+}
+
+.cardImg3 {      
+    box-shadow: 5px 5px 20px rgba(216, 123, 218, 0.15);
+}
+
+.cardImg3 i {
+    color: #D87BDA;  
+    font-size: 30px;
+}
+
+.cardImg3:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(216, 123, 218, 0.15);
+}
+
+.cardImg4 {
+    box-shadow: 5px 5px 20px rgba(235, 87, 96, 0.15);
+}
+
+.cardImg4 i {
+    font-size: 30px;
+    color: #EB5760;
+}
+
+.cardImg4:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 42px rgba(235, 87, 96, 0.15);
+}
+
+.cardTitle h2{
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+.cardBody p {
+    font-size: 16px;
+    line-height: 140.4%;
+}
+
