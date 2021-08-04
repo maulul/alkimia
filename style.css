@@ -7,8 +7,10 @@
 /* HEADER */
 
 body{
+    box-sizing: content-box;
     background-color: #0B0818;
 }
+
 
 header .navBarLogo {
     width: 100%;
@@ -17,11 +19,13 @@ header .navBarLogo {
     position: fixed;
     z-index: 400; 
 }
-
+ /* header, main {
+     overflow-x: hidden;
+ } */
 
 header .navBarLogo .navbar ul li a {
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 25px;
     color: white;
     font-weight: bolder;
@@ -52,10 +56,9 @@ ul li a:after {
   }
 
 
-
-
 header .subHeader {
     height: 110vh;
+    width: 100vw;
     color: white;
     background-color: #0B0818;
     font-family: 'Raleway', sans-serif;     
@@ -66,31 +69,33 @@ header .subHeader {
 }
 
 .subHeader h1 {   
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 16px;
     margin-bottom: 20px;
 }
 
 .subHeader h2 {
-    font-size: 60px;
+    font-size: 4rem;
     line-height: 62px;
     margin-bottom: 20px;
 
 }
 
 .subHeader h3 {
-    font-size: 36px;
+    font-size: 2rem;
     line-height: 50px;
 }
 
 .section1 {    
     position: relative;
     height: 80vh;
+    width: 100vw;
     display: grid;    
     grid-template-columns: repeat(2, 1fr); 
     color: white;
     background-color: #0B0818;
-    font-family: 'Raleway', sans-serif;    
+    font-family: 'Raleway', sans-serif;   
+     
 }
 
 .section1 .subSection1 {
@@ -106,35 +111,33 @@ header .subHeader {
 }
 
 .section1 .subSection2 {
-    position: absolute;
-    top: -10%;
+    position: absolute;    
     grid-column: 2/3;
     background-color: #0B0818;
     border-radius: 4px;
-    padding: 20px;
-    width: 40rem;    
+    padding: 0px 40px;       
 }
 
 
 .section1 .subSection2 h2 {
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 30px;
     color: #FADA24;
 }
 
 .section1 .subSection2 h3 {
-    font-size: 26px;
+    font-size: 1.8rem;
     line-height: 35px;
     font-weight: bold;
 }
 
 .section1 .subSection2 p {
-    font-size: 18px;
+    font-size: 1em;
     line-height: 30px;
     color: #F2F2F2;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 990px) {
     .section1{
         display: flex;
         justify-content: center;
@@ -148,6 +151,7 @@ header .subHeader {
 
 .section2 {
     height: 100vh;
+    width: 100vw;
     background-size: cover;
     color: white;
     background-color: #0B0818;
@@ -157,7 +161,7 @@ header .subHeader {
 
 
 .section2 .secTitle {
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 30px;
     color: #FADA24;
     margin-left: 20vw;
@@ -165,7 +169,7 @@ header .subHeader {
 
 .section2 .secSubtitle {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 2.5rem;
     line-height: 56px;
     margin-left: 20vw;
     margin-bottom: 200px;
@@ -173,7 +177,9 @@ header .subHeader {
 
 .section2 .sectionCards {    
     display: grid;
-    grid-template-columns: repeat(4, 1fr);    
+    grid-template-columns: repeat(4, 1fr); 
+    align-content: center;   
+    justify-content: center;
 }
 
 .section2 .sectionCards .card {   
@@ -181,8 +187,8 @@ header .subHeader {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     position: relative; 
-    width: 278px;
-    height: 415px;
+    width: 300px;
+    height: 430px;
     border-radius: 20px;
     background-color: #2C2740;
     padding: 60px 30px;
@@ -190,7 +196,7 @@ header .subHeader {
     justify-self: center;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1300px){
     .section2 .sectionCards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);  
@@ -198,11 +204,13 @@ header .subHeader {
     }
 }
 
-@media (max-width: 620px){
+@media (max-width: 650px){
     .section2 .sectionCards{
         display: grid;
         grid-template-columns: 1fr;  
         row-gap: 100px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -226,7 +234,7 @@ header .subHeader {
 
 .cardImg1 i {
     color: #F29200;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .cardImg1:hover {
@@ -240,7 +248,7 @@ header .subHeader {
 
 .cardImg2 i {
     color: #75B5F1;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .cardImg2:hover {
@@ -254,7 +262,7 @@ header .subHeader {
 
 .cardImg3 i {
     color: #D87BDA;  
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 .cardImg3:hover {
@@ -267,7 +275,7 @@ header .subHeader {
 }
 
 .cardImg4 i {
-    font-size: 30px;
+    font-size: 1.5rem;
     color: #EB5760;
 }
 
@@ -278,12 +286,12 @@ header .subHeader {
 
 .cardTitle h2{
     font-weight: bold;
-    font-size: 26px;
+    font-size: 1.8rem;
     line-height: 35px;
 }
 
 .cardBody p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 140.4%;
 }
 
