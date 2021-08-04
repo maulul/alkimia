@@ -19,9 +19,9 @@ header .navBarLogo {
     position: fixed;
     z-index: 400; 
 }
- /* header, main {
+  header, main {
      overflow-x: hidden;
- } */
+ } 
 
 header .navBarLogo .navbar ul li a {
     font-family: 'Raleway', sans-serif;
