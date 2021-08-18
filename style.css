@@ -88,7 +88,7 @@ header .subHeader {
 
 .section1 {    
     position: relative;
-    height: 100vh;    
+    min-height: 100vh;    
     display: grid;    
     grid-template-columns: repeat(2, 1fr); 
     color: white;
@@ -149,8 +149,7 @@ header .subHeader {
 }
 
 .section2 {
-    height: 100vh;
-    margin-bottom: 300px;
+    min-height: 100vh;    
     color: white;
     background-color: #0B0818;
     font-family: 'Raleway', sans-serif;
@@ -294,10 +293,20 @@ header .subHeader {
 }
 
 .section3 {
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 100px;
     color: white;
     font-family: 'Raleway', sans-serif;
+}
+
+#img_vp {    
+    height: 300px;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+#img_vp img {
+    width: 100%;
 }
 
 .carousel-item h2 {
@@ -310,8 +319,8 @@ header .subHeader {
     font-size: 16px;
 }
 
+
 .carousel-item button {
-    margin-top: 20px;
     padding: 10px 20px;
     border-radius: 25px;
     border: #FB5B22;
