@@ -53,14 +53,12 @@ ul li a:after {
     width: 100%;
     left: 0;
     background: #EA4E1B;
-  }
-
+  } 
 
 header .subHeader {
-    height: 110vh;
+    min-height: 110vh;
     width: 100vw;
-    color: white;
-    background-color: #0B0818;
+    color: white;    
     font-family: 'Raleway', sans-serif;     
     display: flex;
     flex-direction: column;
@@ -88,7 +86,9 @@ header .subHeader {
 
 .section1 {    
     position: relative;
-    min-height: 100vh;    
+    min-height: 100vh;  
+    background-color: #0B0818;
+    width: 100%;  
     display: grid;    
     grid-template-columns: repeat(2, 1fr); 
     color: white;
@@ -114,7 +114,7 @@ header .subHeader {
     grid-column: 2/3;
     background-color: #0B0818;
     border-radius: 4px;
-    padding: 0px 40px;       
+    padding: 30px 40px;       
 }
 
 
@@ -348,4 +348,102 @@ header .subHeader {
 .carousel-control-next {
     position: absolute;    
     top: 110%;
+}
+
+
+/* SERVICIOS */
+
+.subHeader__servicios {
+    min-height: 110vh;
+    width: 100vw;
+    color: white;    
+    font-family: 'Raleway', sans-serif;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.subHeader__servicios h1 {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.285em;
+    position: relative;
+    left: -25px;
+    margin-bottom: 25px;
+}
+
+.subHeader__servicios h2 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 129.9%;
+}
+
+.section1__servicios {    
+    position: relative;
+    min-height: 100vh;  
+    background-color: #0B0818;
+    width: 100%;  
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr); 
+    color: white;
+    background-color: #0B0818;
+    font-family: 'Raleway', sans-serif;   
+     
+}
+
+.section1__servicios .subSection1__servicios {
+    position: relative;
+    left: 25%;
+    z-index: 20;
+}
+
+.section1__servicios .subSection2__servicios {    
+    font-size: 18px;
+    line-height: 172.9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+.section1__servicios .subSection2__servicios p {
+    padding: 36px;
+    border-radius: 5px;
+    background-color: #0B0818;
+}
+
+.section2__servicios {   
+    min-height: 100vh;  
+    background-color: #0B0818;
+    width: 100%;  
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr); 
+    color: white;
+    background-color: #0B0818;
+    font-family: 'Raleway', sans-serif;   
+     
+}
+
+.section2__servicios .subSection4__servicios {    
+    z-index: 20;
+}
+
+.section2__servicios .subSection3__servicios {    
+    font-size: 18px;
+    line-height: 172.9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+.section2__servicios .subSection3__servicios i {
+    text-align: right;
+    color: green;
+}
+.section2__servicios .subSection3__servicios p {
+    position: relative;    
+    left: 10%;
+    padding: 36px;
+    border-radius: 5px;
+    background-color: #0B0818;
 }
