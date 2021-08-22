@@ -447,3 +447,55 @@ header .subHeader {
     border-radius: 5px;
     background-color: #0B0818;
 }
+
+
+/* servicios diseño */
+
+.subHeader__diseño {
+    min-height: 110vh;
+    width: 100vw;
+    color: #0B0818;    
+    font-family: 'Raleway', sans-serif;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+#background-video {
+    grid-column: 2/3;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.subHeader__diseño .mainTitle__diseño h1 {
+    line-height: 31,12px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.subHeader__diseño .mainTitle__diseño h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62px;
+}
+
+.subHeader__diseño .mainTitle__diseño p {
+    line-height: 31,12px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.section1__diseño {
+    min-height: 100vh;
+    background-color: #FFFDF8;
+}
+
