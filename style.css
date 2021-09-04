@@ -454,7 +454,7 @@ header .subHeader {
 .subHeader__diseño {
     min-height: 110vh;
     width: 100vw;
-    color: #0B0818;    
+    color: white;    
     font-family: 'Raleway', sans-serif;     
     display: flex;
     flex-direction: column;
@@ -475,6 +475,16 @@ header .subHeader {
     bottom: 0;
     z-index: -1;
 }
+
+.h1__content {
+    width: 800px;
+    height: 400px;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: #0b081883;
+    
+}
+
 .subHeader__diseño .mainTitle__diseño h1 {
     line-height: 31,12px;
     font-size: 18px;
@@ -493,9 +503,33 @@ header .subHeader {
     font-weight: 400;
 }
 
-
-.section1__diseño {
-    min-height: 100vh;
+.diseño__main{
     background-color: #FFFDF8;
 }
 
+.section1__diseño {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+ 
+.section1__diseño h2{
+    font-family: 'Raleway', sans-serif; 
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+
+.section1__diseño p {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.list__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
