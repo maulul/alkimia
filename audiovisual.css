@@ -290,19 +290,18 @@ ul li a:after {
 }
 
 
-.cardImg1 {
-    
-    box-shadow: 5px 5px 20px rgba(253, 179, 48, 0.15);    
+.cardImg2 {    
+    box-shadow: 5px 5px 20px rgba(117, 181, 241, 0.26);
 }
 
-.cardImg1 i {
-    color: #F29200;
+.cardImg2 i {
+    color: #75B5F1;
     font-size: 1rem;
 }
 
-.cardImg1:hover {
+.cardImg2:hover {
     transition: 0.5s;
-    box-shadow: 5px 5px 42px rgba(253, 179, 48, 0.15);
+    box-shadow: 5px 5px 42px rgba(117, 181, 241, 0.26);
 }
 
 .cardImg3 {      
